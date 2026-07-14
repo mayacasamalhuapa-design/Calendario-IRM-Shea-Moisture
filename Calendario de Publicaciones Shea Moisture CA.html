@@ -1,0 +1,276 @@
+<html data-type="html" data-identifier="6f2ea8e2-d057-4671-bd3a-94fc282c8e87" data-title="Calendario de Publicaciones Shea Moisture CA" data-version="4" width="1200" height="2050"><head>
+<meta charset="UTF-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background: #FBFEFD;
+    color: #2F4F4A;
+    padding: 54px 30px;
+    -webkit-font-smoothing: antialiased;
+  }
+  .container { max-width: 1060px; margin: 0 auto; }
+
+  header {
+    text-align: center;
+    padding: 20px 20px 40px;
+    margin-bottom: 44px;
+    border-bottom: 1px solid #E6F3EF;
+  }
+  .brand-tag {
+    font-size: 12px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #00BCA3;
+    font-weight: 700;
+    margin-bottom: 22px;
+  }
+  #main-title {
+    font-size: 46px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    line-height: 1;
+    color: #00A891;
+    text-transform: uppercase;
+  }
+  #subtitle {
+    font-size: 15px;
+    font-weight: 400;
+    color: #7FA9A1;
+    margin-top: 16px;
+    letter-spacing: 0.4px;
+  }
+  .brand-lockup {
+    margin-top: 22px;
+    font-size: 14px;
+    color: #93BBB2;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
+
+  .swatches {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin: 26px 0 0;
+  }
+  .sw { width: 46px; height: 6px; border-radius: 4px; }
+
+  .stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-bottom: 50px;
+  }
+  .stat {
+    flex: 1;
+    min-width: 150px;
+    padding: 26px 20px;
+    text-align: center;
+    background: #fff;
+    border: 1px solid #E6F3EF;
+    border-radius: 16px;
+  }
+  .stat .num { font-size: 30px; font-weight: 800; color: #00BCA3; letter-spacing: -1px; }
+  .stat .label { font-size: 11px; color: #93BBB2; margin-top: 8px; text-transform: uppercase; letter-spacing: 1.2px; }
+
+  .legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 34px;
+    font-size: 13px;
+    color: #5C7C76;
+  }
+  .legend-group { display: flex; gap: 18px; align-items: center; flex-wrap: wrap; }
+  .legend span { display: inline-flex; align-items: center; gap: 8px; }
+  .dot { width: 12px; height: 12px; border-radius: 4px; display: inline-block; }
+  .d-gt { background: #ADD057; }
+  .d-sv { background: #FFCBAD; }
+  .d-hn { background: #85E0D6; }
+  .d-cr { background: #00BCA3; }
+  .d-mm { background: #FFDCE6; }
+  .sep { width: 1px; height: 18px; background: #E6F3EF; }
+
+  .phase {
+    font-size: 22px;
+    font-weight: 800;
+    letter-spacing: 0.3px;
+    color: #00A891;
+    margin: 48px 0 4px;
+  }
+  .phase-sub { font-size: 13px; color: #93BBB2; margin-bottom: 20px; letter-spacing: 0.3px; }
+
+  table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: #fff;
+    border: 1px solid #E6F3EF;
+    border-radius: 16px;
+    overflow: hidden;
+  }
+  thead th {
+    text-align: left;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    color: #7FA9A1;
+    background: #F3FBF9;
+    padding: 16px;
+    border-bottom: 1px solid #E6F3EF;
+  }
+  tbody td {
+    padding: 15px 16px;
+    font-size: 14px;
+    border-bottom: 1px solid #F0F8F6;
+    vertical-align: middle;
+  }
+  tbody tr:last-child td { border-bottom: none; }
+  tbody tr:hover td { background: #F7FCFB; }
+
+  .date-cell { font-weight: 800; color: #00A891; white-space: nowrap; font-size: 14px; }
+  .day-cell { color: #A9C7C0; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; }
+  .name-cell { font-weight: 600; color: #2F4F4A; }
+
+  .star { color: #00BCA3; font-weight: 800; margin-right: 4px; }
+
+  .pill {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+  }
+  .p-macro { color: #00A891; background: #E1F6F2; }
+  .p-micro { color: #E27EA0; background: #FFE7EE; }
+
+  .badge {
+    display: inline-block;
+    padding: 5px 13px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+  }
+  .b-gt { background: #EEF6DA; color: #7C9B26; }
+  .b-sv { background: #FFEADF; color: #E08A5A; }
+  .b-hn { background: #DFF6F2; color: #2FA595; }
+  .b-cr { background: #D0F0EB; color: #009982; }
+  .b-mm { background: #FFE7EE; color: #E27EA0; }
+
+  .plat { font-size: 12px; color: #5C7C76; font-weight: 600; }
+
+  .prio td { background: #EFFBF8; }
+  .prio td:first-child { box-shadow: inset 4px 0 0 #00BCA3; }
+
+  footer {
+    margin-top: 44px;
+    padding-top: 24px;
+    border-top: 1px solid #E6F3EF;
+    text-align: center;
+    font-size: 12px;
+    color: #A9C7C0;
+    letter-spacing: 0.5px;
+  }
+  .note {
+    margin-top: 16px;
+    font-size: 12px;
+    color: #93BBB2;
+    font-style: italic;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand-tag">Shea Moisture × Ogilvy</div>
+      <h1 id="main-title">Calendario de Publicaciones</h1>
+      <p id="subtitle">Campaña de Influencers · Centroamérica &amp; Costa Rica · 16 julio – 21 agosto 2026 · Instagram &amp; TikTok</p>
+      <div class="brand-lockup">Nutre · Define · Celebra tus rizos</div>
+      <div class="swatches">
+        <span class="sw" style="background:#FFCBAD;"></span>
+        <span class="sw" style="background:#FFDCE6;"></span>
+        <span class="sw" style="background:#ADD057;"></span>
+        <span class="sw" style="background:#00BCA3;"></span>
+        <span class="sw" style="background:#E2F5B8;"></span>
+        <span class="sw" style="background:#85E0D6;"></span>
+      </div>
+    </header>
+
+    <div class="stats">
+      <div class="stat"><div class="num">15</div><div class="label">Influencers</div></div>
+      <div class="stat"><div class="num">27</div><div class="label">Contenidos</div></div>
+      <div class="stat"><div class="num">12 / 3</div><div class="label">Macro / Micro-Mid</div></div>
+      <div class="stat"><div class="num">4</div><div class="label">Países</div></div>
+      <div class="stat"><div class="num">~6</div><div class="label">Semanas</div></div>
+    </div>
+
+    <div class="legend">
+      <div class="legend-group">
+        <span><i class="dot d-gt"></i> Guatemala</span>
+        <span><i class="dot d-sv"></i> El Salvador</span>
+        <span><i class="dot d-hn"></i> Honduras</span>
+        <span><i class="dot d-cr"></i> Costa Rica</span>
+        <span><i class="dot d-mm"></i> Micro/Mid Regional</span>
+      </div>
+      <div class="sep"></div>
+      <span><b class="star">★</b> Arranque de campaña</span>
+    </div>
+
+    <div class="phase">Fase 1 — Primer contenido</div>
+    <div class="phase-sub">Arranque jueves 16 de julio · solo días hábiles · los 3 perfiles Micro/Mid cierran dentro de julio</div>
+    <table>
+      <thead>
+        <tr><th>Fecha</th><th>Día</th><th>Influencer</th><th>Perfil</th><th>País</th><th>Plataforma</th></tr>
+      </thead>
+      <tbody>
+        <tr class="prio"><td class="date-cell">16 Jul</td><td class="day-cell">Jue</td><td class="name-cell"><span class="star">★</span>Jennifer Rojas</td><td><span class="pill p-micro">Micro/Mid</span></td><td><span class="badge b-mm">Regional CA</span></td><td class="plat">Instagram · TikTok</td></tr>
+        <tr><td class="date-cell">17 Jul</td><td class="day-cell">Vie</td><td class="name-cell">Cibely Montenegro</td><td><span class="pill p-macro">Macro</span></td><td><span class="badge b-gt">Guatemala</span></td><td class="plat">Instagram · TikTok</td></tr>
+        <tr><td class="date-cell">20 Jul</td><td class="day-cell">Lun</td><td class="name-cell">Ale Costa</td><td><span class="pill p-macro">Macro</span></td><td><span class="badge b-sv">El Salvador</span></td><td class="plat">Instagram · TikTok</td></tr>
+        <tr><td class="date-cell">21 Jul</td><td class="day-cell">Mar</td><td class="name-cell">Massay Crisanto</td><td><span class="pill p-macro">Macro</span></td><td><span class="badge b-hn">Honduras</span></td><td class="plat">Instagram · TikTok</td></tr>
+        <tr><td class="date-cell">22 Jul</td><td class="day-cell">Mié</td><td class="name-cell">Zury Flores</td><td><span class="pill p-micro">Micro/Mid</span></td><td><span class="badge b-mm">Regional CA</span></td><td class="plat">Instagram · TikTok</td></tr>
+        <tr><td class="date-cell">23 Jul</td><td class="day-cell">Jue</td><td class="name-cell">Rachell McKenzie</td><td><span class="pill p-macro">Macro</span></td><td><span class="badge b-cr">Costa Rica</span></td><td class="plat">Instagram · TikTok</td></tr>
+        <tr><td class="date-cell">24 Jul</td><td class="day-cell">Vie</td><td class="name-cell">Paola Hütt</td><td><span class="pill p-macro">Macro</span></td><td><span class="badge b-gt">Guatemala</span></td><td class="plat">Instagram · TikTok</td></tr>
+        <tr><td class="date-cell">27 Jul</td><td class="day-cell">Lun</td><td class="name-cell">Emma Ramos</td><td><span class="pill p-macro">Macro</span></td><td><span class="badge b-hn">Honduras</span></td><td class="plat">Instagram · TikTok</td></tr>
+        <tr><td class="date-cell">28 Jul</td><td class="day-cell">Mar</td><td class="name-cell">Marjorie Rodríguez</td><td><span class="pill p-micro">Micro/Mid</span></td><td><span class="badge b-mm">Regional CA</span></td><td class="plat">Instagram · TikTok</td></tr>
+        <tr><td class="date-cell">29 Jul</td><td class="day-cell">Mié</td><td class="name-cell">Yuride Gutiérrez</td><td><span class="pill p-macro">Macro</span></td><td><span class="badge b-cr">Costa Rica</span></td><td class="plat">Instagram · TikTok</td></tr>
+        <tr><td class="date-cell">30 Jul</td><td class="day-cell">Jue</td><td class="name-cell">Melany Melgar</td><td><span class="pill p-macro">Macro</span></td><td><span class="badge b-gt">Guatemala</span></td><td class="plat">Instagram · TikTok</td></tr>
+        <tr><td class="date-cell">31 Jul</td><td class="day-cell">Vie</td><td class="name-cell">Viaja con Isabella</td><td><span class="pill p-macro">Macro</span></td><td><span class="badge b-hn">Honduras</span></td><td class="plat">Instagram · TikTok</td></tr>
+        <tr><td class="date-cell">03 Ago</td><td class="day-cell">Lun</td><td class="name-cell">Melina Serrano</td><td><span class="pill p-macro">Macro</span></td><td><span class="badge b-cr">Costa Rica</span></td><td class="plat">Instagram · TikTok</td></tr>
+        <tr><td class="date-cell">04 Ago</td><td class="day-cell">Mar</td><td class="name-cell">Lin Chang</td><td><span class="pill p-macro">Macro</span></td><td><span class="badge b-gt">Guatemala</span></td><td class="plat">Instagram · TikTok</td></tr>
+        <tr><td class="date-cell">05 Ago</td><td class="day-cell">Mié</td><td class="name-cell">Alejandra Ortíz</td><td><span class="pill p-macro">Macro</span></td><td><span class="badge b-sv">El Salvador</span></td><td class="plat">Instagram · TikTok</td></tr>
+      </tbody>
+    </table>
+
+    <div class="phase">Fase 2 — Segundo contenido</div>
+    <div class="phase-sub">Solo perfiles Macro · continúa el jueves 6 de agosto · cierre 21 de agosto</div>
+    <table>
+      <thead>
+        <tr><th>Fecha</th><th>Día</th><th>Influencer</th><th>Perfil</th><th>País</th><th>Plataforma</th></tr>
+      </thead>
+      <tbody>
+        <tr><td class="date-cell">06 Ago</td><td class="day-cell">Jue</td><td class="name-cell">Cibely Montenegro</td><td><span class="pill p-macro">Macro</span></td><td><span class="badge b-gt">Guatemala</span></td><td class="plat">Instagram · TikTok</td></tr>
+        <tr><td class="date-cell">07 Ago</td><td class="day-cell">Vie</td><td class="name-cell">Ale Costa</td><td><span class="pill p-macro">Macro</span></td><td><span class="badge b-sv">El Salvador</span></td><td class="plat">Instagram · TikTok</td></tr>
+        <tr><td class="date-cell">10 Ago</td><td class="day-cell">Lun</td><td class="name-cell">Massay Crisanto</td><td><span class="pill p-macro">Macro</span></td><td><span class="badge b-hn">Honduras</span></td><td class="plat">Instagram · TikTok</td></tr>
+        <tr><td class="date-cell">11 Ago</td><td class="day-cell">Mar</td><td class="name-cell">Rachell McKenzie</td><td><span class="pill p-macro">Macro</span></td><td><span class="badge b-cr">Costa Rica</span></td><td class="plat">Instagram · TikTok</td></tr>
+        <tr><td class="date-cell">12 Ago</td><td class="day-cell">Mié</td><td class="name-cell">Paola Hütt</td><td><span class="pill p-macro">Macro</span></td><td><span class="badge b-gt">Guatemala</span></td><td class="plat">Instagram · TikTok</td></tr>
+        <tr><td class="date-cell">13 Ago</td><td class="day-cell">Jue</td><td class="name-cell">Emma Ramos</td><td><span class="pill p-macro">Macro</span></td><td><span class="badge b-hn">Honduras</span></td><td class="plat">Instagram · TikTok</td></tr>
+        <tr><td class="date-cell">14 Ago</td><td class="day-cell">Vie</td><td class="name-cell">Yuride Gutiérrez</td><td><span class="pill p-macro">Macro</span></td><td><span class="badge b-cr">Costa Rica</span></td><td class="plat">Instagram · TikTok</td></tr>
+        <tr><td class="date-cell">17 Ago</td><td class="day-cell">Lun</td><td class="name-cell">Melany Melgar</td><td><span class="pill p-macro">Macro</span></td><td><span class="badge b-gt">Guatemala</span></td><td class="plat">Instagram · TikTok</td></tr>
+        <tr><td class="date-cell">18 Ago</td><td class="day-cell">Mar</td><td class="name-cell">Viaja con Isabella</td><td><span class="pill p-macro">Macro</span></td><td><span class="badge b-hn">Honduras</span></td><td class="plat">Instagram · TikTok</td></tr>
+        <tr><td class="date-cell">19 Ago</td><td class="day-cell">Mié</td><td class="name-cell">Melina Serrano</td><td><span class="pill p-macro">Macro</span></td><td><span class="badge b-cr">Costa Rica</span></td><td class="plat">Instagram · TikTok</td></tr>
+        <tr><td class="date-cell">20 Ago</td><td class="day-cell">Jue</td><td class="name-cell">Lin Chang</td><td><span class="pill p-macro">Macro</span></td><td><span class="badge b-gt">Guatemala</span></td><td class="plat">Instagram · TikTok</td></tr>
+        <tr><td class="date-cell">21 Ago</td><td class="day-cell">Vie</td><td class="name-cell">Alejandra Ortíz</td><td><span class="pill p-macro">Macro</span></td><td><span class="badge b-sv">El Salvador</span></td><td class="plat">Instagram · TikTok</td></tr>
+      </tbody>
+    </table>
+
+    <p class="note">Nota: Jennifer Rojas (16 Jul), Zury Flores (22 Jul) y Marjorie Rodríguez (28 Jul) —perfiles Micro/Mid— publican una sola vez y cierran dentro de julio. Nancy Aguirre se retiró del calendario (contenido ya publicado). Los perfiles Micro/Mid sin país asignado en los guiones se marcan como "Regional CA".</p>
+
+    <footer>Propuesta de calendario · Shea Moisture × Ogilvy · 27 contenidos · 15 influencers · Instagram &amp; TikTok · Julio – Agosto 2026</footer>
+  </div>
+</body></html>
